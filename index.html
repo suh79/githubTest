@@ -35,22 +35,33 @@
         </form>
       </header>
       <main>
-        <div class="current-weather">
+        <div class="current-weather-app">
           <div>
             <h1 class="current-city" id="current-city">Paris</h1>
             <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span id="time"></span>, <span id="description"></span>
+              <br />
+              Humidity
+              <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span id="current-temp" class="current-temperature-value">24</span
-            ><span class="current-temperature-unit">°C</span>
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                class="current-temperature-icon"
+              />
+            </div>
+            <div class="current-temperature-contaier">
+              <span id="icon" class="current-temperature-icon"></span
+              ><span id="current-temp" class="current-temperature-value"></span
+              ><span class="current-temperature-unit">°C</span>
+            </div>
           </div>
         </div>
       </main>
-       <footer>
+      <footer>
         <p>
           This project was coded by
           <a href="https://github.com/suh79" target="_blank">Siri</a> is
@@ -67,4 +78,3 @@
   </body>
   <script src="src/Index.js"></script>
 </html>
-
