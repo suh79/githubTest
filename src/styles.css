@@ -7,39 +7,37 @@ a {
   color: #885df1;
 }
 
-.weather-app {
+.Siris-weather-app {
   background: white;
   max-width: 600px;
-  margin: 60px auto;
+  margin: 45px auto;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 header {
   border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 30px;
+  padding:  0 0 30px 0;
 }
 
-.search-input {
+.search-form-input {
   background-color: #f9f7fe;
   border: none;
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  padding: 20px;
-  width: 75%;
   border-radius: 6px;
+  width: 70%;
+  font-size: 16px;
+  padding: 15px 20px;
 }
 
-.search-button {
-  margin-left: 5px;
-  font-size: 16px;
-  background-color: #885df1;
-  color: white;
+.search-form-button {
+  background: #885df1;
+  padding: 15px 30px;
   border: none;
-  padding: 20px;
-  line-height: 1;
-  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
 }
 
 main {
@@ -50,7 +48,7 @@ main {
   font-size: 48px;
 }
 
-.current-weather {
+.current-weather-app {
   display: flex;
   justify-content: space-between;
 }
@@ -63,7 +61,7 @@ main {
 .current-details {
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
 }
 
@@ -71,28 +69,35 @@ main {
   color: #f65282;
 }
 
-.current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
 }
 
-.current-temperature-value {
-  font-size: 80px;
+.weather-app-temperature {
+  font-size: 88px;
+  line-height: 88px;
   font-weight: bold;
+  margin-left: 10 px;
 }
 
-.current-temperature-unit {
+.weather-app-unit{
+  margin-top: 6px;
   font-size: 28px;
-  position: relative;
-  top: -38px;
+}
+
+.current-temperature {
+  display: flex;
+}
+
+.weather-app-temperature-container {
+  display: flex;
 }
 
 footer {
   border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
   text-align: center;
-  padding-top: 15px;
-
-  color: rgba(39, 33, 66, 0.4);
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
 }
